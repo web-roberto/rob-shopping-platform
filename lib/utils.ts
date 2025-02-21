@@ -6,7 +6,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 //use:   await delay(2000);
-export const delay =(ms) => new Promise((resolve) => setTimeout(resolve, ms))
+export const delay =(ms:number) => new Promise((resolve) => setTimeout(resolve, ms))
 
 //Convert prisma objec into a regular JS object
 export function convertToPlainObject<T>(value:T):T {
